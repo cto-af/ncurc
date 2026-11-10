@@ -1,0 +1,40 @@
+{
+  "name": "ncurc",
+  "version": "0.0.0",
+  "decription": "Ignore local packages when doing cooldown for npm-check-updates.",
+  "main": "index.js",
+  "type": "module",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "npm-check-updates,",
+    "local-packages"
+  ],
+  "author": "Joe Hildebrand <joe-github@cursive.net>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hildjj/ncurc.git"
+  },
+  "homepage": "https://github.com/hildjj/ncurc#readme",
+  "bugs": {
+    "url": "https://github.com/hildjj/ncurc/issues"
+  },
+  "scripts": {
+    "check": "ncu",
+    "docs": "typedoc",
+    "types": "tsc",
+    "build": "npm run types && npm run docs && npm run check"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@typescript/native": "npm:typescript@^7.0.2",
+    "npm-check-updates": "^23",
+    "typedoc": "^0.28.20",
+    "typescript": "npm:@typescript/typescript6@^6.0.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
