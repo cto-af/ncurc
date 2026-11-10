@@ -1,5 +1,5 @@
 {
-  "name": "ncurc",
+  "name": "@cto.af/ncurc",
   "version": "0.0.1",
   "decription": "Ignore local packages when doing cooldown for npm-check-updates.",
   "main": "index.js",
@@ -15,11 +15,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hildjj/ncurc.git"
+    "url": "git+https://github.com/cto-af/ncurc.git"
   },
-  "homepage": "https://github.com/hildjj/ncurc#readme",
+  "homepage": "https://github.com/cto-af/ncurc#readme",
   "bugs": {
-    "url": "https://github.com/hildjj/ncurc/issues"
+    "url": "https://github.com/cto-af/ncurc/issues"
   },
   "scripts": {
     "check": "ncu",
