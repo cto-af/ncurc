@@ -8,7 +8,8 @@ Utilities for configuring [npm-check-updates](https://github.com/raineorshine/np
 npm install -D @cto.af/ncurc
 ```
 
-.ncurc.js:
+In .ncurc.js:
+
 ```js
 import {localCooldown} from './index.js';
 
@@ -18,6 +19,7 @@ export default {
 ```
 
 Put names of local packages in ../deps.json:
+
 ```json
 {
   "local": ["foo", "bar"]
