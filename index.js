@@ -41,14 +41,14 @@ export async function localCooldown(options = {}) {
     localSet = new Set(local);
   } catch (errs) {
     const ae = /** @type {AggregateError} */ (errs);
-    const badErrs = ae.errors.filter((e) => e.code !== "ENOENT");
+    const badErrs = ae.errors.filter((e) => e.code !== 'ENOENT');
     switch (badErrs.length) {
       case 0:
         break;
       case 1:
         throw badErrs[0];
       default:
-        throw new AggregateError(badErrs, "Error finding dependencies", {
+        throw new AggregateError(badErrs, 'Error finding dependencies', {
           cause: errs,
         });
     }
