@@ -1,6 +1,6 @@
 {
   "name": "@cto.af/ncurc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "decription": "Ignore local packages when doing cooldown for npm-check-updates.",
   "main": "index.js",
   "type": "module",
